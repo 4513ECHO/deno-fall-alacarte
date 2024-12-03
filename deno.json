@@ -1,0 +1,24 @@
+{
+  "name": "@4513echo/fall-alacarte",
+  "version": "0.0.0",
+  "exports": {
+    ".": "./mod.ts",
+    "./action": "./action/mod.ts",
+    "./action/colorscheme": "./action/colorscheme.ts",
+    "./renderer": "./renderer/mod.ts",
+    "./renderer/tilde-path": "./renderer/tilde_path.ts",
+    "./source": "./source/mod.ts",
+    "./source/colorscheme": "./source/colorscheme.ts"
+  },
+  "compilerOptions": {
+    "exactOptionalPropertyTypes": true,
+    "noUncheckedIndexedAccess": true
+  },
+  "tasks": {
+    "check": "deno fmt --check && deno lint && deno check ."
+  },
+  "imports": {
+    "@denops/std": "jsr:@denops/std@^7.4.0",
+    "@vim-fall/std": "jsr:@vim-fall/std@^0.10.1"
+  }
+}
