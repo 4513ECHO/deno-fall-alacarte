@@ -8,9 +8,7 @@ type Detail = {
 export function colorscheme(): Source<Detail> {
   return defineSource(async function* (denops) {
     let id = 0;
-    for (
-      const name of await getcompletion(denops, "", "colorscheme") as string[]
-    ) {
+    for (const name of await getcompletion(denops, "", "color") as string[]) {
       yield {
         id: id++,
         value: name,

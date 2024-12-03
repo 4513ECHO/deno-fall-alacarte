@@ -14,7 +14,7 @@ export function colorscheme(): Action<Detail> {
   });
 }
 
-export const defaultColorschemeAction: {
+export const defaultColorschemeActions: {
   colorscheme: Action<Detail>;
 } = {
   colorscheme: colorscheme(),
